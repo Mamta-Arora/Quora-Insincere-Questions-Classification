@@ -13,7 +13,7 @@
 
 
 
-## Neutral Network:
+## Neural Network:
 
 
 
