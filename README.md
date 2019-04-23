@@ -13,12 +13,9 @@
 
 
 
-## Neural Network:
+## Embedding & Preprocessing:
 
 
-
-
-### Data cleaning:
 
 #### 1. Pre-trained Word Embeddings Useful for Neural Network Model
     a. Embedding
