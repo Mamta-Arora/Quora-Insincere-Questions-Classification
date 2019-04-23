@@ -36,8 +36,10 @@
 #### 2. Data Preprocessing 
     a. Baseline:
     Don't use standard preprocessing steps like stemming or stop word removal when you have pre-trained embeddings.
+    
     b. Reason:
     Lose valuable information, which would help your NN to figure things out.
+    
     c. Purpose:
     Get your vocabulary as close to the embeddings as possible.
 
