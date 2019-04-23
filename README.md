@@ -1,23 +1,24 @@
 # DS595 IR  Final project README.
 
 
-##Problem discreption:
+## Problem discreption:
 
 
 
 
 
 
-##LR:
+
+## LR:
 
 
 
-##Neutral Network:
+## Neutral Network:
 
 
 
 
-###Data cleaning:
+### Data cleaning:
 
 #### 1. Pre-trained Word Embeddings Useful for Neural Network Model
     a. Embedding
@@ -32,19 +33,19 @@
     unknown words
 
 
-####2. Data Preprocessing 
-#####a. baseline:
-Don't use standard preprocessing steps like stemming or stop word removal when you have pre-trained embeddings.
-#####b. reason:
-Lose valuable information, which would help your NN to figure things out.
-#####c. purpose:
-Get your vocabulary as close to the embeddings as possible.
+#### 2. Data Preprocessing 
+    a. Baseline:
+    Don't use standard preprocessing steps like stemming or stop word removal when you have pre-trained embeddings.
+    b. Reason:
+    Lose valuable information, which would help your NN to figure things out.
+    c. Purpose:
+    Get your vocabulary as close to the embeddings as possible.
 
-####3. GoogleNews pretrained embeddings example:
+#### 3. GoogleNews pretrained embeddings example:
 ![1.png](image/1.png)
 
 
-####4. Compare Four different embeddings:
+#### 4. Compare Four different embeddings:
 ![2.png](image/2.png)
 
 
