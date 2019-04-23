@@ -29,11 +29,11 @@ c.unk
 unknown words
 
 2. Preprocessing 
-1. baseline:
+a. baseline:
 Don't use standard preprocessing steps like stemming or stop word removal when you have pre-trained embeddings.
-2. reason:
+b. reason:
 Lose valuable information, which would help your NN to figure things out.
-3. purpose:
+c. purpose:
 Get your vocabulary as close to the embeddings as possible.
 
 3. GoogleNews pretrained embeddings example:
