@@ -60,7 +60,7 @@ However, our dataset is unbalanced, which will influence the accuracy of AUC sco
 
 
 #### 4. Compare Four different embeddings:
-![2.png](image/2.png)
+![2.0.png](image/2.0.png)
 
 
 
