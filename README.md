@@ -1,13 +1,24 @@
 # DS595 IR  Final project README.
 
+## Problem discription:
+We are living in an era that majority of world are connected by Internet. On one side, we are earning money, respect and knowledge from social web by producing, sharing and looking up helpful contents; On the other side, some people use social web to promote hatred and violence against individuals or groups based on race, religion, sexual orientation, etc.  
 
-## Problem discreption:
+We explored different Machine Learning approaches and built a text classification predictive model to detect inappropriate texts. By filtering inappropriate contents, users with questions feel happier and easier to ask and find information they need hence they will be more active; Experienced people feel happier to share their knowledge because more people will appreciate and make good use of their contribution. With a more peaceful and active communication environment, social web platforms expect to have a steady growth and earning. 
 
+## Exploratory Data Analysis
+Here are some findings from our EDA.
 
+1. Data size and shape: 1.3 millions * 3
 
+![datasize.png](image/datasize.png)
 
+2. Data is imbalanced: 94% vs 6%
 
+![imbalanced.png](image/imbalanced.png)
 
+3. Sincere questions are more about technology, material life, emotional need; Insincere questions are more about race, religion, politics.
+
+![topwords.png](image/topwords.png)
 
 ## Logistic Regression Classifier:
 We choose TF-IDF as text feature and transfer all text into vectors. Then we used logistic regression model to classify the question whether it is sincere or not. After we get prediction, we made a ROC curve in order to show the AUC score and also calculated precission. Both of them are methods to evaluate this model. The two scores are high which means this model perform well. 
