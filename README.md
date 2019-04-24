@@ -9,7 +9,7 @@
 
 
 
-## LR:
+## Logistic Regression Classifier:
 We choose TF-IDF as text feature and transfer all text into vectors. Then we used logistic regression model to classify the question whether it is sincere or not. After we get prediction, we made a ROC curve in order to show the AUC score and also calculated precission. Both of them are methods to evaluate this model. The two scores are high which means this model perform well. 
 
 ![image.png](image/ROC.png)
