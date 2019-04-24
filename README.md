@@ -28,11 +28,11 @@ We choose TF-IDF as text feature and transfer all text into vectors. Then we use
 However, our dataset is unbalanced, which will influence the accuracy of AUC score and precision. Thus, we choose F1 score as a new method to evaluate this mode. Contrary to earlier results, F1 score is only 0.63. This result shows that logistic regression is not so good.
 
 
-## Embedding & Preprocessing:
+## Neural NetworkClassifier 
 
+### Embeddings and Preprocessing
 
-
-#### 1. Pre-trained Word Embeddings Useful for Neural Network Model
+#### Pre-trained Word Embeddings Useful for Neural Network Model
     a. Embedding
     Word embeddings are a type of word representation that allows words with similar meaning to have a similar representation.
     Pretrained word embeddings have proven to be invaluable for improving performance in natural language analysis tasks,
@@ -45,7 +45,7 @@ However, our dataset is unbalanced, which will influence the accuracy of AUC sco
     unknown words
 
 
-#### 2. Data Preprocessing 
+#### Data Preprocessing 
     a. Baseline:
     Don't use standard preprocessing steps like stemming or stop word removal when you have pre-trained embeddings.
     
@@ -55,15 +55,81 @@ However, our dataset is unbalanced, which will influence the accuracy of AUC sco
     c. Purpose:
     Get your vocabulary as close to the embeddings as possible.
 
-#### 3. GoogleNews pretrained embeddings example:
+#### GoogleNews pretrained embeddings example
 ![1.png](image/1.png)
 
 
-#### 4. Compare Four different embeddings:
+####  Compare Four different embeddings coverage
 ![2.0.png](image/2.0.png)
 
+#### Preparations
+    Fill in missing value by “_na_”
+    Tokenize
+    Padding(fix length or variable length)
+    Embedding Matrix
+    
+#### Different embeddings performance
+    Though we trained an embedding based on our dataset so that it covers all of the words, the performance is still not good.
+    Pre-trained Embeddings was trained from millions of dataset so it is good enough to represent the meaning of the words.  
 
 
+![3.png](image/3.png)
+
+
+#### Without & With Preprocessing performance
+    Though more words are not covered and replaced by “UNK” , BiGRU model is still powerful to do classification.
+     Before: 0.669
+    Found embeddings for 24.31% of vocab
+    Found embeddings for  78.75% of all text
+
+     After: 0.664
+    Found embeddings for 60.42% of vocab 
+    Found embeddings for 97.31% of all text
+
+
+
+
+### Models
+
+#### 2-layer BiGRU
+![4.png](image/4.png)
+
+#### LSTM+CNN
+![7.png](image/7.png)
+
+#### GRU+Attention
+    * 3-layer-BiGRU
+    Initializer: Glorot Uniform
+    recurrent_initializer=Orthogonal
+    * Concatenate: 
+    Maxpooling
+    Last Hidden Sate
+    Attention
+    * Fully-connected Layer
+    BatchNormalization
+    Dropout
+    
+![5.png](image/5.png)
+
+### Different model performance
+    Since the data is imbalacenced, 94% are the sincere target, so accuracy for four models are both high, but through the F1 score, could find the LR model is not good.
+
+![6.png](image/6.png)
+
+## conclusion
+
+### Comparaed to LR Model
+
+    These texts are correctly predicted by this DL model
+![8.png](image/8.png)
+
+ 
+
+
+### Further work
+    These texts are those our model still misclassifies.
+    
+![9.png](image/9.png)
 
 
 
