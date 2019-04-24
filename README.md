@@ -12,7 +12,7 @@ Here are some findings from our EDA.
 
 ![datasize.png](image/datasize.png)
 
-2. Data is imbalanced: 94% vs 6%
+2. Data is heavily imbalanced: 94% of texts are non-toxic and 6% are toxic.
 
 ![imbalanced.png](image/imbalanced.png)
 
