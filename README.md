@@ -1,4 +1,4 @@
-# DS595 IR  Final project README.
+# Quora Insincere Questions Classification.
 
 ## Problem Description:
 We are living in an era that majority of world are connected by Internet. On one side, we are earning money, respect and knowledge from social web by producing, sharing and looking up helpful contents; On the other side, some people use social web to promote hatred and violence against individuals or groups based on race, religion, sexual orientation, etc.  
